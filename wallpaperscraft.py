@@ -1,7 +1,9 @@
 # coded by evil37
 
 import os
-
+import urllib
+import requests
+from bs4 import BeautifulSoup
 try:
     os.mkdir("wallpaper")
     os.chdir("wallpaper")
@@ -11,10 +13,7 @@ except:
 print("~evil37~")
 print("Downloading images [*]")
 for i in range(1, 7278):
-    import urllib
-
-    import requests
-    from bs4 import BeautifulSoup
+   
 
     print("Downloading ({}/7277) ({}%)".format(i,("{0:.2f}".format(((i/7277)*100)))))
     url = "https://wallpaperscraft.com/all/page{}".format(i)
